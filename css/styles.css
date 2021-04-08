@@ -34,7 +34,7 @@
 }
 
 .footer {
-    position: absolute;
+    position: fixed;
     bottom: 0px;
     width: 100%;
     height: 30px; /* Set the fixed height of the footer here */
@@ -43,13 +43,62 @@
 }
 
 .footer-link {
-    color: white !important;
+    color: black !important;
 }
 
-/* img {
+/* .imageContainer {
+    width: 100px;
+} */
+
+/* .imageContainer img {
+    width: 100px !important;
+    height: auto !important;
+} */
+
+img {
     width: 100%;
 }
 
+.largeText {
+    font-size: 20px;
+}
+
+@media only screen and (min-width: 1024px) {
+    .largeText {
+        font-size: 50px;
+    }
+
+    
+}
+
+
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+    .largeText {
+        font-size: 40px;
+    }
+
+    
+}
+
+
+@media only screen and (max-width: 767px) and (min-width: 540px) {
+    .largeText {
+        font-size: 30px;
+    }
+
+    
+}
+
+.book {
+    /* margin-left: 5px; */
+    /* margin-right: 5px; */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* 
 .image {
     width: 100%;
     display: flex;
